@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI Friend ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">❤️ My AI Friend</div>
+    <button class="profile-btn" onclick="showProfile()">👤</button>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <p class="small-text">YOUR FRIENDSHIP WORLD</p>
+      <h1>Hello, Friend! 👋</h1>
+      <p>Someone is always here to talk with you.</p>
+    </section>
+
+    <section class="daily-card">
+      <div>
+        <span>💜</span>
+        <h2>Never Feel Alone</h2>
+        <p>Talk, share and enjoy every moment.</p>
+      </div>
+      <div class="heart">❤️</div>
+    </section>
+
+    <h2 class="section-title">Start a Conversation</h2>
+
+    <div class="chat-card ai-card" onclick="openAI()">
+      <div class="card-icon">🤖</div>
+      <div class="card-content">
+        <h3>Chat with AI Friend</h3>
+        <p>Talk with your smart AI companion.</p>
+      </div>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="chat-card people-card" onclick="openFriends()">
+      <div class="card-icon">👫</div>
+      <div class="card-content">
+        <h3>Talk with Real People</h3>
+        <p>Meet new friends and chat together.</p>
+      </div>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="chat-card voice-card" onclick="openVoice()">
+      <div class="card-icon">🎙️</div>
+      <div class="card-content">
+        <h3>Voice Chat</h3>
+        <p>Speak and enjoy conversations.</p>
+      </div>
+      <span class="arrow">➜</span>
+    </div>
+
+    <section class="language">
+      <h3>Choose Your Language 🌍</h3>
+      <button onclick="setLanguage('বাংলা')">বাংলা</button>
+      <button onclick="setLanguage('English')">English</button>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button onclick="goHome()">🏠<small>Home</small></button>
+    <button onclick="openFriends()">👥<small>Friends</small></button>
+    <button onclick="showProfile()">👤<small>Profile</small></button>
+  </nav>
+
+  <script src="game.js"></script>
+</body>
+</html>
